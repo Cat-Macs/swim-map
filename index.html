@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_188a9f075a1677513f5f59476938114f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_188a9f075a1677513f5f59476938114f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_188a9f075a1677513f5f59476938114f = L.map(
+                "map_188a9f075a1677513f5f59476938114f",
+                {
+                    center: [46.3, 0.72],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_487b36a326396e44669cfef0e696467c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_188a9f075a1677513f5f59476938114f);
+        
+    
+            var marker_9fe02246c123eacef67965e1d2fcfbb4 = L.marker(
+                [46.3, 0.72],
+                {}
+            ).addTo(map_188a9f075a1677513f5f59476938114f);
+        
+    
+            var icon_f3ee3b2206d74b566867617943efd8e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9fe02246c123eacef67965e1d2fcfbb4.setIcon(icon_f3ee3b2206d74b566867617943efd8e7);
+        
+    
+        var popup_1e19982f5a136f3a08dc22fce3108976 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fff8265badaffdf360e16031d11e77f9 = $(`<div id="html_fff8265badaffdf360e16031d11e77f9" style="width: 100.0%; height: 100.0%;">Bourpeuil (Home Base)</div>`)[0];
+            popup_1e19982f5a136f3a08dc22fce3108976.setContent(html_fff8265badaffdf360e16031d11e77f9);
+        
+
+        marker_9fe02246c123eacef67965e1d2fcfbb4.bindPopup(popup_1e19982f5a136f3a08dc22fce3108976)
+        ;
+
+        
+    
+    
+            var marker_55c50db920435016cd0947e21840aa77 = L.marker(
+                [46.205, 0.72],
+                {}
+            ).addTo(map_188a9f075a1677513f5f59476938114f);
+        
+    
+            var icon_32264026bd89d005adca7bf1cf1e74e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55c50db920435016cd0947e21840aa77.setIcon(icon_32264026bd89d005adca7bf1cf1e74e3);
+        
+    
+        var popup_16ff820c53a69a9a3c7999c202c353f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91cb0ee2547ca692305cdd4ed14e7e94 = $(`<div id="html_91cb0ee2547ca692305cdd4ed14e7e94" style="width: 100.0%; height: 100.0%;">Queaux – Aire de loisirs (plage sur la Vienne) - River beach on the Vienne, supervised swimming in summer.<br>Distance: 10.6 km<br>Approx. drive time: 11 min<br>Best for: 🚣 Paddle boarding with Mr B & short swims</div>`)[0];
+            popup_16ff820c53a69a9a3c7999c202c353f0.setContent(html_91cb0ee2547ca692305cdd4ed14e7e94);
+        
+
+        marker_55c50db920435016cd0947e21840aa77.bindPopup(popup_16ff820c53a69a9a3c7999c202c353f0)
+        ;
+
+        
+    
+    
+            var marker_fa6667886c9c7ee9dceb63d9446bc0cd = L.marker(
+                [46.52, 0.86],
+                {}
+            ).addTo(map_188a9f075a1677513f5f59476938114f);
+        
+    
+            var icon_d6e8ade6d12e57f73beaa7121c915403 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa6667886c9c7ee9dceb63d9446bc0cd.setIcon(icon_d6e8ade6d12e57f73beaa7121c915403);
+        
+    
+        var popup_917e926a7ef6102a8fa1fcf4aee974e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f0c6b503ec5eca3a6d9b9fa32282135 = $(`<div id="html_1f0c6b503ec5eca3a6d9b9fa32282135" style="width: 100.0%; height: 100.0%;">Lésigny – Aire de loisirs (sur la Creuse) - Calm river spot with lifeguards in July–Aug.<br>Distance: 26.7 km<br>Approx. drive time: 27 min<br>Best for: Mixed use</div>`)[0];
+            popup_917e926a7ef6102a8fa1fcf4aee974e5.setContent(html_1f0c6b503ec5eca3a6d9b9fa32282135);
+        
+
+        marker_fa6667886c9c7ee9dceb63d9446bc0cd.bindPopup(popup_917e926a7ef6102a8fa1fcf4aee974e5)
+        ;
+
+        
+    
+    
+            var marker_b68081366821a73522f329c37c1e6bff = L.marker(
+                [46.198, 0.407],
+                {}
+            ).addTo(map_188a9f075a1677513f5f59476938114f);
+        
+    
+            var icon_397397111d59eaacd13d0f08a424393f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b68081366821a73522f329c37c1e6bff.setIcon(icon_397397111d59eaacd13d0f08a424393f);
+        
+    
+        var popup_8167d49f9f79e18621e6614acc94871c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f17d96e098c1a2932cfdb5910cf3138d = $(`<div id="html_f17d96e098c1a2932cfdb5910cf3138d" style="width: 100.0%; height: 100.0%;">Saint-Macoux – Aire de loisirs du Marais - Small lake, supervised Tue–Sun in July–Aug, waterslide.<br>Distance: 26.7 km<br>Approx. drive time: 27 min<br>Best for: 🏊‍♀️ Long swims & paddle boarding with Mr B</div>`)[0];
+            popup_8167d49f9f79e18621e6614acc94871c.setContent(html_f17d96e098c1a2932cfdb5910cf3138d);
+        
+
+        marker_b68081366821a73522f329c37c1e6bff.bindPopup(popup_8167d49f9f79e18621e6614acc94871c)
+        ;
+
+        
+    
+    
+            var marker_d74f2c2ef9f05643a6f714f994062abb = L.marker(
+                [46.892, -0.045],
+                {}
+            ).addTo(map_188a9f075a1677513f5f59476938114f);
+        
+    
+            var icon_28fbc5e0bb6a28bc3c29a8b7ec0e4405 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d74f2c2ef9f05643a6f714f994062abb.setIcon(icon_28fbc5e0bb6a28bc3c29a8b7ec0e4405);
+        
+    
+        var popup_f4751a4ba091e34371d25b428488ee46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3084175099791db4efb359a788101190 = $(`<div id="html_3084175099791db4efb359a788101190" style="width: 100.0%; height: 100.0%;">Moncontour Active Park - Large lake with sandy beach, inflatables, rentals, café.<br>Distance: 88.1 km<br>Approx. drive time: 88 min<br>Best for: 🏊‍♀️ Long swims & paddle boarding with Mr B</div>`)[0];
+            popup_f4751a4ba091e34371d25b428488ee46.setContent(html_3084175099791db4efb359a788101190);
+        
+
+        marker_d74f2c2ef9f05643a6f714f994062abb.bindPopup(popup_f4751a4ba091e34371d25b428488ee46)
+        ;
+
+        
+    
+    
+            var marker_7fe3bd37609c505fa26b4cd0758e689c = L.marker(
+                [46.785, 0.811],
+                {}
+            ).addTo(map_188a9f075a1677513f5f59476938114f);
+        
+    
+            var icon_27f091f58e1eed6c6406c99e9b2bf0e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7fe3bd37609c505fa26b4cd0758e689c.setIcon(icon_27f091f58e1eed6c6406c99e9b2bf0e7);
+        
+    
+        var popup_7461d4a8bc1475308049bf4241cfc42a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_106d0119c74c7ef4fc4e40971aebdb7f = $(`<div id="html_106d0119c74c7ef4fc4e40971aebdb7f" style="width: 100.0%; height: 100.0%;">La Roche-Posay – Plage sur la Creuse - River beach, bathing authorised 13:00–19:00 with lifeguard.<br>Distance: 54.4 km<br>Approx. drive time: 54 min<br>Best for: 🚣 Paddle boarding with Mr B & short swims</div>`)[0];
+            popup_7461d4a8bc1475308049bf4241cfc42a.setContent(html_106d0119c74c7ef4fc4e40971aebdb7f);
+        
+
+        marker_7fe3bd37609c505fa26b4cd0758e689c.bindPopup(popup_7461d4a8bc1475308049bf4241cfc42a)
+        ;
+
+        
+    
+    
+            var marker_42719edf7117777a0c9fd9850a935df5 = L.marker(
+                [46.05, 1.27],
+                {}
+            ).addTo(map_188a9f075a1677513f5f59476938114f);
+        
+    
+            var icon_22ec94fd464c3b30045552828f81f7bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_42719edf7117777a0c9fd9850a935df5.setIcon(icon_22ec94fd464c3b30045552828f81f7bf);
+        
+    
+        var popup_6106ad40a049ee7923658fe331273a02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56908e4d3d9dcbcbf7c523e96a971c5d = $(`<div id="html_56908e4d3d9dcbcbf7c523e96a971c5d" style="width: 100.0%; height: 100.0%;">Lac de Saint-Pardoux - Big lake with three supervised sandy beaches, SUP/canoe hire.<br>Distance: 50.8 km<br>Approx. drive time: 51 min<br>Best for: 🏊‍♀️ Long swims & paddle boarding with Mr B</div>`)[0];
+            popup_6106ad40a049ee7923658fe331273a02.setContent(html_56908e4d3d9dcbcbf7c523e96a971c5d);
+        
+
+        marker_42719edf7117777a0c9fd9850a935df5.bindPopup(popup_6106ad40a049ee7923658fe331273a02)
+        ;
+
+        
+    
+</script>
+</html>
